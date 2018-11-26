@@ -1,14 +1,14 @@
 import React from 'react';
 import EventBox from '../components/EventBox';
 
-import data from '../data/eventsData';
+let data = require ('../data/eventsData');
+
 
 export default class ListEventBox extends React.PureComponent {
     constructor(props) {
         super(props);
-
         this.state = {
-            events: data.events
+            events: data.data.events
         };
     }
 
@@ -16,7 +16,10 @@ export default class ListEventBox extends React.PureComponent {
         return (
             <div>
                 {this.state.events.map(event => {
-                    <EventBox event={event}/>
+                    <EventBox
+                        image_url={event.image.url}
+                        event_name={event.name}
+                    />
                 })}
             </div>
         );

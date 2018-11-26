@@ -4,12 +4,11 @@ import EventDetails from './EventDetails';
 import EventFloatTitle from './EventFloatTitle';
 
 export default class EventBox extends React.PureComponent {
-    static propTypes = {
-        event: React.propTypes.Object //NO ME GUSTA ESTO!!
-    };
-
     render() {
-        let {event} = this.props;
+        let {
+            image_url,
+            event_name
+        } = this.props;
 
         return (
             <div class="event-box">
@@ -18,7 +17,7 @@ export default class EventBox extends React.PureComponent {
                         <EventFloatTitle />
                     </div>
                     <div class="event-box__img">
-                        <EventImage src={event.image.original.url} alt={event.name}/>
+                        <EventImage src={image_url} alt={event_name}/>
                     </div>
                 </aside>
 
