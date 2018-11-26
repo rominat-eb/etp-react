@@ -1,18 +1,30 @@
 import React from 'react';
+import EventImage from './EventImage';
+import EventDetails from './EventDetails';
+import EventFloatTitle from './EventFloatTitle';
 
-export default class EventBox extends React.PureComponent{
+export default class EventBox extends React.PureComponent {
+    static propTypes = {
+        event: React.propTypes.Object //NO ME GUSTA ESTO!!
+    };
+
     render() {
+        let {event} = this.props;
+
         return (
-            <div className="event_box">
-                <img src="../images/non_palidece.jpg" alt="Nonpalidece" className="event-box__img" />
-                <div className="event-box__right_side_info">
-                    <div className="event-box__right_side_info__title">Nonpalidece en 23 Ríos</div>
-                    <div className="event-box__right_side_info__extra_info">
-                        <div>Sun, Nov 25, 12:00pm</div>
-                        <div>5269 Acceso Sur - Lateral Este, 5781, Mendoza</div>
-                        <div>Free</div>
+            <div class="event-box">
+                <aside>
+                    <div>
+                        <EventFloatTitle />
                     </div>
-                </div>
+                    <div class="event-box__img">
+                        <EventImage src={event.image.original.url} alt={event.name}/>
+                    </div>
+                </aside>
+
+                <main class="event-box__right_side_info">
+                    <EventDetails />
+                </main>
             </div>
         );
     }

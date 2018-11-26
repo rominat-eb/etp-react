@@ -1,0 +1,42 @@
+* {
+    font-family: Neue Plak,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
+}
+
+.events-list-title {
+    padding: 10px;
+}
+
+.events-list-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+}
+
+.event-box {
+    display: flex;
+    padding: 20px;
+}
+
+.event-box__img {
+    border-radius: 5%;
+    height: 150px;
+    width: 300px;
+}
+
+.event-box__right_side_info {
+    margin-left: 10px;
+    width: 400px;
+}
+
+.event-box__right_side_info__title {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.event-box__right_side_info__extra_info {
+    color: grey;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
