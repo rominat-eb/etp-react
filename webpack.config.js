@@ -17,12 +17,24 @@ module.exports = {
                 use: 'babel-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader',
+                ],
+            },
         ],
     },
     plugins: [
         new HtmlWebPackPlugin({
             template: './public/index.html',
             filename: './index.html',
+        }),
+        new webpack.EnvironmentPlugin({
+            'NODE_ENV': 'development',
+            'REACT_APP_TARGET': 'web',
         }),
     ],
 };
