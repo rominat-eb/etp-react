@@ -32,8 +32,19 @@ export default class ListEventBox extends React.PureComponent {
         })),
     }
 
-    _getLocationInfo(name, localizedAddress) {
-        return [name, localizedAddress].filter(Boolean).join(', ');
+    static defaultProps = {
+        events: []
+    }
+
+    _getLocationInfo(primary_venue_with_places) {
+        const {
+            name,
+            address: {
+                localized_address_display
+            }
+        } = primary_venue_with_places;
+
+        return [name, localized_address_display].filter(Boolean).join(', ');
     }
 
     _getMinPrice(minimum_ticket_price) {
@@ -54,7 +65,7 @@ export default class ListEventBox extends React.PureComponent {
                 id={event.id}
                 key={event.id}
                 imageUrl={event.image.url}
-                locationInfo={this._getLocationInfo(event.primary_venue_with_places.name, event.primary_venue_with_places.address.localized_address_display)}
+                locationInfo={this._getLocationInfo(event.primary_venue_with_places)}
                 minPrice={this._getMinPrice(event.ticket_availability.minimum_ticket_price)}
                 name={event.name}
                 startDate={event.start_date}

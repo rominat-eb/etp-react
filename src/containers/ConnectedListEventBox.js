@@ -1,13 +1,15 @@
-import React from 'react';
+import {connect} from 'react-redux';
+
 import ListEventBox from '../components/ListEventBox';
 
-let data = require ('../data/eventsData');
+const _mapStateToProps = (state) => ({
+   events: state.events,
+});
 
-export default class ConnectedListEventBox extends React.PureComponent {
-    render() {
-        const events = data.data.events;
-        return (
-            <ListEventBox events={events} />
-        );
-    }
-}
+const _mapDispatchToProps = {
+};
+
+export default connect(
+   _mapStateToProps,
+   _mapDispatchToProps,
+)(ListEventBox);

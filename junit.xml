@@ -1,0 +1,10 @@
+<testsuites name="jest tests" tests="2" failures="0" time="1.696">
+  <testsuite name="Render the main App" errors="0" failures="0" skipped="0" timestamp="2018-12-04T04:23:12" time="1.089" tests="1">
+    <testcase classname="Render the main App test" name="Render the main App test" time="0.144">
+    </testcase>
+  </testsuite>
+  <testsuite name="Render ListEventBox" errors="0" failures="0" skipped="0" timestamp="2018-12-04T04:23:13" time="0.607" tests="1">
+    <testcase classname="Render ListEventBox test" name="Render ListEventBox test" time="0.02">
+    </testcase>
+  </testsuite>
+</testsuites>

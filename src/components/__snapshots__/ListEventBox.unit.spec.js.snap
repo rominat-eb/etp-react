@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render ListEventBox test 1`] = `
+<ListEventBox
+  events={
+    Array [
+      Object {
+        "id": "47796618",
+        "image": Object {
+          "url": "https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F47796618%2F238672898614%2F1%2Foriginal.jpg?h=512&w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=217cb46eb42120eb2191402569a39491",
+        },
+        "name": "CARNATAL 2018",
+        "primary_venue_with_places": Object {
+          "address": Object {
+            "localized_address_display": "Natal, Rio Grande do Norte",
+          },
+          "name": "Improv Comedy Theater & Restaurant",
+        },
+        "start_date": "2018-12-13",
+        "start_time": "19:00",
+        "ticket_availability": Object {
+          "is_free": false,
+          "minimum_ticket_price": Object {
+            "currency": "BRL",
+            "display": "130.00 BRL",
+            "major_value": "130.00",
+            "value": 13000,
+          },
+        },
+        "url": "https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743",
+      },
+    ]
+  }
+>
+  <div>
+    <EventCard
+      excludeDateThumbnail={true}
+      hideSaveButton={true}
+      id="47796618"
+      imageStyle="fixed"
+      imageUrl="https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F47796618%2F238672898614%2F1%2Foriginal.jpg?h=512&w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=217cb46eb42120eb2191402569a39491"
+      isFree={false}
+      isNoFollow={false}
+      key="47796618"
+      locationInfo="Improv Comedy Theater & Restaurant, Natal, Rio Grande do Norte"
+      minPrice={
+        Object {
+          "currency": "BRL",
+          "currencyFormat": "#,##0.00",
+          "minPriceValue": 13000,
+        }
+      }
+      name="CARNATAL 2018"
+      startDate="2018-12-13"
+      startTime="19:00"
+      style="standard"
+      type="list"
+      url="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+    >
+      <div
+        className="eds-l-pad-all-1"
+      >
+        <Card
+          style="neutral"
+        >
+          <div
+            className="eds-card eds-card--neutral"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            role="presentation"
+          >
+            <MediaCardContent
+              imageAlt="CARNATAL 2018"
+              imageStyle="fixed"
+              imageUrl="https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F47796618%2F238672898614%2F1%2Foriginal.jpg?h=512&w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=217cb46eb42120eb2191402569a39491"
+              isNoFollow={false}
+              isTargetBlank={true}
+              linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+              primaryIconOnClick={null}
+              primaryIconStyle={null}
+              primaryIconTitle={null}
+              primaryIconType={null}
+              style="standard"
+              subContentOne="Thu, Dec 13, 7:00pm"
+              subContentThree="Starts at R$130.00"
+              subContentTwo={
+                <div
+                  className="card-text--truncated__one"
+                >
+                  Improv Comedy Theater & Restaurant, Natal, Rio Grande do Norte
+                </div>
+              }
+              title={
+                <FormattedEventName
+                  eventName="CARNATAL 2018"
+                />
+              }
+              type="list"
+            >
+              <ListMediaCardContent
+                imageAlt="CARNATAL 2018"
+                imageStyle="fixed"
+                imageUrl="https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F47796618%2F238672898614%2F1%2Foriginal.jpg?h=512&w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=217cb46eb42120eb2191402569a39491"
+                isNoFollow={false}
+                isTargetBlank={true}
+                linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                primaryIconOnClick={null}
+                primaryIconStyle={null}
+                primaryIconTitle={null}
+                primaryIconType={null}
+                style="standard"
+                subContentOne="Thu, Dec 13, 7:00pm"
+                subContentThree="Starts at R$130.00"
+                subContentTwo={
+                  <div
+                    className="card-text--truncated__one"
+                  >
+                    Improv Comedy Theater & Restaurant, Natal, Rio Grande do Norte
+                  </div>
+                }
+                title={
+                  <FormattedEventName
+                    eventName="CARNATAL 2018"
+                  />
+                }
+              >
+                <section
+                  className="eds-media-card-content eds-media-card-content--list eds-media-card-content--standard eds-media-card-content--fixed"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  role="presentation"
+                >
+                  <ExtraContentContainer
+                    imageStyle="fixed"
+                    style="standard"
+                  >
+                    <div
+                      className="eds-show-up-sm"
+                    >
+                      <ExtraContent />
+                    </div>
+                  </ExtraContentContainer>
+                  <ListMediaCardImageContainer
+                    imageAlt="CARNATAL 2018"
+                    imageStyle="fixed"
+                    imageUrl="https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F47796618%2F238672898614%2F1%2Foriginal.jpg?h=512&w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=217cb46eb42120eb2191402569a39491"
+                    isNoFollow={false}
+                    isTargetBlank={true}
+                    linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                    style="standard"
+                  >
+                    <aside
+                      className="eds-media-card-content__image-container"
+                    >
+                      <Image
+                        hasNoTabIndex={true}
+                        imageAlt="CARNATAL 2018"
+                        imageStyle="fixed"
+                        imageUrl="https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F47796618%2F238672898614%2F1%2Foriginal.jpg?h=512&w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=217cb46eb42120eb2191402569a39491"
+                        isNoFollow={false}
+                        isTargetBlank={true}
+                        linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                        placeholderBgColor="#EEEDF2"
+                      >
+                        <ActionWrapper
+                          hasNoTabIndex={true}
+                          isNoFollow={false}
+                          isTargetBlank={true}
+                          linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                        >
+                          <a
+                            className="eds-media-card-content__action-link"
+                            href="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                            rel="noopener noreferrer"
+                            tabIndex="-1"
+                            target="_blank"
+                          >
+                            <div
+                              className="eds-media-card-content__image-wrapper"
+                            >
+                              <div
+                                className="eds-media-card-content__image-content"
+                              >
+                                <div
+                                  className="eds-media-card-content__image-placeholder"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "#EEEDF2",
+                                    }
+                                  }
+                                />
+                                <img
+                                  alt="CARNATAL 2018"
+                                  className="eds-media-card-content__image eds-max-img"
+                                  src="https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F47796618%2F238672898614%2F1%2Foriginal.jpg?h=512&w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=217cb46eb42120eb2191402569a39491"
+                                />
+                              </div>
+                            </div>
+                          </a>
+                        </ActionWrapper>
+                      </Image>
+                      <Flag />
+                    </aside>
+                  </ListMediaCardImageContainer>
+                  <ListMediaCardContentContainer
+                    isNoFollow={false}
+                    isTargetBlank={true}
+                    linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                    primaryIconOnClick={null}
+                    primaryIconStyle={null}
+                    primaryIconTitle={null}
+                    primaryIconType={null}
+                    style="standard"
+                    subContentOne="Thu, Dec 13, 7:00pm"
+                    subContentThree="Starts at R$130.00"
+                    subContentTwo={
+                      <div
+                        className="card-text--truncated__one"
+                      >
+                        Improv Comedy Theater & Restaurant, Natal, Rio Grande do Norte
+                      </div>
+                    }
+                    title={
+                      <FormattedEventName
+                        eventName="CARNATAL 2018"
+                      />
+                    }
+                  >
+                    <main
+                      className="eds-media-card-content__content-container eds-l-pad-right-2"
+                    >
+                      <div
+                        className="eds-media-card-content__content"
+                      >
+                        <ExtraContent />
+                        <div
+                          className="eds-media-card-content__content__principal"
+                        >
+                          <PrimaryContent
+                            isNoFollow={false}
+                            isTargetBlank={true}
+                            linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                            style="standard"
+                            title={
+                              <FormattedEventName
+                                eventName="CARNATAL 2018"
+                              />
+                            }
+                          >
+                            <div
+                              className="eds-media-card-content__primary-content"
+                            >
+                              <div
+                                className="eds-text-bs eds-text-color--grey-600"
+                              />
+                              <ActionWrapper
+                                isNoFollow={false}
+                                isTargetBlank={true}
+                                linkUrl="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                              >
+                                <a
+                                  className="eds-media-card-content__action-link"
+                                  href="https://www.evbqa.com.br/e/carnatal-2018-tickets-48246888743"
+                                  rel="noopener noreferrer"
+                                  tabIndex="0"
+                                  target="_blank"
+                                >
+                                  <h3
+                                    className="eds-media-card-content__title eds-text-color--grey-800 eds-text-bl"
+                                  >
+                                    <FormattedEventName
+                                      eventName="CARNATAL 2018"
+                                    >
+                                      <div
+                                        data-spec="event-card__formatted-name"
+                                      >
+                                        <div
+                                          className="eds-is-hidden-accessible"
+                                        >
+                                          CARNATAL 2018
+                                        </div>
+                                        <div
+                                          aria-hidden="true"
+                                          className="card-text--truncated__three"
+                                          data-spec="event-card__formatted-name--content"
+                                          role="presentation"
+                                        >
+                                          CARNATAL 2018
+                                        </div>
+                                      </div>
+                                    </FormattedEventName>
+                                  </h3>
+                                </a>
+                              </ActionWrapper>
+                            </div>
+                          </PrimaryContent>
+                          <DividerComponent />
+                          <SubContent
+                            subContentOne="Thu, Dec 13, 7:00pm"
+                            subContentThree="Starts at R$130.00"
+                            subContentTwo={
+                              <div
+                                className="card-text--truncated__one"
+                              >
+                                Improv Comedy Theater & Restaurant, Natal, Rio Grande do Norte
+                              </div>
+                            }
+                          >
+                            <div
+                              className="eds-media-card-content__sub-content"
+                            >
+                              <div
+                                className="eds-text-bs--fixed eds-text-color--grey-600 eds-l-mar-top-1"
+                              >
+                                Thu, Dec 13, 7:00pm
+                              </div>
+                              <div
+                                className="eds-media-card-content__sub-content-cropped"
+                              >
+                                <div
+                                  className="eds-text-bs--fixed eds-text-color--grey-600 eds-l-mar-top-1"
+                                >
+                                  <div
+                                    className="card-text--truncated__one"
+                                  >
+                                    Improv Comedy Theater & Restaurant, Natal, Rio Grande do Norte
+                                  </div>
+                                </div>
+                                <div
+                                  className="eds-text-bs--fixed eds-text-color--grey-600 eds-l-mar-top-1"
+                                >
+                                  Starts at R$130.00
+                                </div>
+                                <div
+                                  className="eds-text-bs--fixed eds-text-color--grey-600 eds-l-mar-top-1"
+                                />
+                              </div>
+                            </div>
+                          </SubContent>
+                        </div>
+                      </div>
+                      <MediaCardActions
+                        primaryIconOnClick={null}
+                        primaryIconStyle={null}
+                        primaryIconTitle={null}
+                        primaryIconType={null}
+                      >
+                        <div
+                          className="eds-media-card-content__actions-container"
+                        >
+                          <MediaCardAction />
+                          <MediaCardAction
+                            iconType={null}
+                            onClick={null}
+                            style={null}
+                            title={null}
+                          />
+                        </div>
+                      </MediaCardActions>
+                    </main>
+                  </ListMediaCardContentContainer>
+                </section>
+              </ListMediaCardContent>
+            </MediaCardContent>
+          </div>
+        </Card>
+      </div>
+    </EventCard>
+  </div>
+</ListEventBox>
+`;
