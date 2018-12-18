@@ -1,3 +1,4 @@
+import { reducer as formReducer } from 'redux-form'
 import {combineReducers} from 'redux';
 import {
     ADD,
@@ -32,4 +33,5 @@ const events = (state = []) => {
 export default combineReducers({
     number,
     events,
+    form: formReducer,
 });

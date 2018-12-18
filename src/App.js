@@ -7,7 +7,10 @@ import thunk from 'redux-thunk';
 
 import ConnectedStepper from './containers/ConnectedStepper';
 import ConnectedListEventBox from './containers/ConnectedListEventBox';
+import ConnectedSearchForm from './containers/ConnectedSearchForm';
 
+//import ./reducers/index.js
+//si hay mas reducers, tienen q ser combinados en ese archivo
 import reducers from './reducers';
 
 let data = require ('./data/eventsData');
@@ -18,7 +21,7 @@ export default class App extends React.Component {
 
         this._store = createStore(
             reducers,
-            {events: data.data.events},
+            {events: data.data.events}, //initial state
             composeWithDevTools(
                 applyMiddleware(...[thunk], createLogger({collapsed: true})),
             ),
@@ -28,7 +31,10 @@ export default class App extends React.Component {
         return (
             <Provider store={this._store}>
                <div>
-                    <ConnectedStepper />
+                    <ConnectedSearchForm />
+                    {
+                    //<ConnectedStepper />
+                    }
                     <ConnectedListEventBox />
                </div>
            </Provider>
