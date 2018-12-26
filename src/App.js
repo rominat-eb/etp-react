@@ -8,6 +8,7 @@ import thunk from 'redux-thunk';
 import ConnectedStepper from './containers/ConnectedStepper';
 import ConnectedListEventBox from './containers/ConnectedListEventBox';
 import ConnectedSearchForm from './containers/ConnectedSearchForm';
+import ConnectedSearchAPIForm from './containers/ConnectedListAPIEventBox';
 
 //import ./reducers/index.js
 //si hay mas reducers, tienen q ser combinados en ese archivo
@@ -28,14 +29,16 @@ export default class App extends React.Component {
         );
     }
     render() {
+        let container = <ConnectedSearchAPIForm />
+
         return (
             <Provider store={this._store}>
                <div>
-                    <ConnectedSearchForm />
+                    {container}
                     {
                     //<ConnectedStepper />
                     }
-                    <ConnectedListEventBox />
+                    {<ConnectedListEventBox />}
                </div>
            </Provider>
         );
