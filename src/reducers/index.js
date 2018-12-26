@@ -24,8 +24,12 @@ const number = (state = 0, {type}) => {
     return nextState;
 };
 
-const events = (state = []) => {
+const events = (state = [], {type, payload}) => {
     let nextState = state;
+
+    if (type === 'UPDATE_EVENTS') {
+        nextState = payload;
+    }
 
     return nextState;
 };
