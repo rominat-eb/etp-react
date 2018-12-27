@@ -8,13 +8,11 @@ import thunk from 'redux-thunk';
 import ConnectedStepper from './containers/ConnectedStepper';
 import ConnectedListEventBox from './containers/ConnectedListEventBox';
 import ConnectedSearchForm from './containers/ConnectedSearchForm';
-import ConnectedSearchAPIForm from './containers/ConnectedListAPIEventBox';
+import ConnectedSearchFormAPI from './containers/ConnectedSearchFormAPI';
 
 //import ./reducers/index.js
 //si hay mas reducers, tienen q ser combinados en ese archivo
 import reducers from './reducers';
-
-let data = require ('./data/eventsData');
 
 export default class App extends React.Component {
     constructor(props) {
@@ -22,14 +20,14 @@ export default class App extends React.Component {
 
         this._store = createStore(
             reducers,
-            {events: data.data.events}, //initial state
+            {}, //initial state
             composeWithDevTools(
                 applyMiddleware(...[thunk], createLogger({collapsed: true})),
             ),
         );
     }
     render() {
-        let container = <ConnectedSearchAPIForm />
+        let container = <ConnectedSearchFormAPI />
 
         return (
             <Provider store={this._store}>

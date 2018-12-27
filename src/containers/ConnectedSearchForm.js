@@ -9,6 +9,7 @@ const _mapStateToProps = () => ({});
 
 const _mapDispatchToProps = {
     onSubmit: search,
+    onLoad: search
 };
 
 const ReduxSearchForm = reduxForm ({

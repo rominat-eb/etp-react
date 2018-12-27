@@ -60,25 +60,42 @@ export default class ListEventBox extends React.PureComponent {
             events,
         } = this.props;
 
-        const eventsBoxes = events.map(event => (
-            <EventCard
-                id={event.id}
-                key={event.id}
-                imageUrl={event.image.url}
-                locationInfo={this._getLocationInfo(event.primary_venue_with_places)}
-                minPrice={this._getMinPrice(event.ticket_availability.minimum_ticket_price)}
-                name={event.name}
-                startDate={event.start_date}
-                startTime={event.start_time}
-                type="list"
-                style="standard"
-                imageStyle="fixed"
-                isFree={event.ticket_availability.is_free}
-                url={event.url}
-                hideSaveButton={true}
-                excludeDateThumbnail={true}
-            />
-        ));
+        const eventsBoxes = events.map(({
+            id,
+            image,
+            primary_venue_with_places,
+            ticket_availability: {
+                is_free,
+                minimum_ticket_price,
+            },
+            name,
+            start_date,
+            start_time,
+            url,
+        }) => {
+            let imageUrl = image ? image.url : "https://media.tenor.com/images/2d11bfcfd249f73fbc3ce5f67ae7ebcf/tenor.png";
+
+            return (
+                <EventCard
+                    id={id}
+                    key={id}
+                    imageUrl={imageUrl}
+                    locationInfo={this._getLocationInfo(primary_venue_with_places)}
+                    minPrice={this._getMinPrice(minimum_ticket_price)}
+                    name={name}
+                    startDate={start_date}
+                    startTime={start_time}
+                    type="list"
+                    style="standard"
+                    imageStyle="fixed"
+                    isFree={is_free}
+                    url={url}
+                    hideSaveButton={true}
+                    excludeDateThumbnail={true}
+                />
+            );
+            }
+        );
 
         return (
             <div>

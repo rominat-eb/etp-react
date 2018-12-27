@@ -10,9 +10,18 @@ import {
     FORMATTED_CATEGORY_MAPPING
 } from '../data/constants';
 
-export default class ValidationSearchFormField extends React.PureComponent {
+export default class SearchForm extends React.PureComponent {
     static propTypes = {
         handleSubmit: PropTypes.func.isRequired,
+        onLoad: PropTypes.func.isRequired,
+    }
+
+    componentDidMount() {
+        const {
+            onLoad
+        } = this.props;
+
+        onLoad();
     }
 
     render() {

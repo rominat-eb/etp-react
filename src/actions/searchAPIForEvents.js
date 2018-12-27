@@ -1,44 +1,14 @@
-import eventbrite from 'eventbrite';
-import {OATH_TOKEN} from '../data/keys';
+import {searchEvents} from '../API';
 
 export const SEARCH = 'search';
-export const search = (term) => (
+export const search = (terms = {}) => (
     (dispatch) => {
-        // Create configured Eventbrite SDK
-        const sdk = eventbrite({
-            token: OATH_TOKEN,
-            baseUrl: 'https://www.evbqaapi.com/v3',
-        });
-
-        const eventsUrl = `/destination/search/`;
-
-        sdk.request(
-            eventsUrl,
-            {
-                method: 'POST',
-                body: JSON.stringify({
-                    event_search: {
-                        q: term.searchEvent,  // search by name
-                        price: "free", // any price
-                        dates: ["this_month"],  // date
-                        tags: [
-                            category, // category
-                            "EventbriteFormat/5",  // event type
-                        ],
-                    },
-                    page_size: 50,
-                    'expand.destination_event': [
-                        "primary_venue",
-                        "image",
-                        "ticket_availability",
-                    ]
-                }),
-            }
-        ).then(res => {
-            dispatch({type: 'UPDATE_EVENTS', payload: events});
+        searchEvents(terms)
+        .then(res => {
+            dispatch({type: 'UPDATE_EVENTS', payload: res.events.results});
         })
         .catch(error => {
-            console.log("Error");
+            console.log("error", error);
         });
     }
 );
