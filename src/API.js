@@ -13,8 +13,8 @@ export const searchEvents = terms => {
     const eventSearch = {};
     if (terms.searchEvent) eventSearch.q = terms.searchEvent;
     if (terms.searchFormat) {
-        eventSearch.master_tags = [];
-        eventSearch.master_tags.push(terms.searchFormat);
+        eventSearch.tags = [];
+        eventSearch.tags.push(terms.searchFormat);
     }
     eventSearch.dates = ["current_future"];
 

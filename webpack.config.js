@@ -38,4 +38,7 @@ module.exports = {
             'REACT_APP_TARGET': 'web',
         }),
     ],
+    devServer: {
+        historyApiFallback: true
+      }
 };
